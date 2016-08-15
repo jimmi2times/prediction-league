@@ -1,4 +1,4 @@
-<?php 
+<?php
 global $filename;
 
 // Zuerst definieren wir die Funktionen, die spaeter auf
@@ -66,12 +66,12 @@ function pl_startElement($parser, $name, $atts) {
     break;
   case "team2";
 	$value = 'team2';
-    break;    
-        
+    break;
+
   default:
     // Ein ungueltiges Element ist vorgekommen.
     $error = "Undefiniertes Element <".$name.">";
-    die($error . " in Zeile " . 
+    die($error . " in Zeile " .
         xml_get_current_line_number($parser));
     break;
   }
@@ -125,18 +125,18 @@ function pl_cdata($parser, $text) {
 
 	/* get the games */
 	if ($value== "gametime" AND $text > 0) {
-		if (!isset($games[$game_id]['gametime'])){$games[$game_id]['gametime'] = '';}		
-		if (!isset($games[$game_id]['round'])){$games[$game_id]['round'] = '';}		
-		
+		if (!isset($games[$game_id]['gametime'])){$games[$game_id]['gametime'] = '';}
+		if (!isset($games[$game_id]['round'])){$games[$game_id]['round'] = '';}
+
 		$games[$game_id]['gametime'] .= $text;
 		$games[$game_id]['round'] .= $round;
 		}
 	if ($value== "team1" AND $text > 0) {
-		if (!isset($games[$game_id]['team1'])){$games[$game_id]['team1'] = '';}			
+		if (!isset($games[$game_id]['team1'])){$games[$game_id]['team1'] = '';}
 		$games[$game_id]['team1'] .= $text;
 		}
 	if ($value== "team2" AND $text > 0) {
-		if (!isset($games[$game_id]['team2'])){$games[$game_id]['team2'] = '';}			
+		if (!isset($games[$game_id]['team2'])){$games[$game_id]['team2'] = '';}
 		$games[$game_id]['team2'] .= $text;
 		}
 }
@@ -205,7 +205,7 @@ foreach ($games as $game){
 		$form['round'] = $game['round'];
 		$form['competition_id'] = $competition_id;
 		pl_save_game($form);
-	
+
 }
 
 /* ready */

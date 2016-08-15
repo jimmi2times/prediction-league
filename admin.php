@@ -29,13 +29,13 @@ if (isset($_REQUEST['action'])){
 		$competition_id = $_REQUEST['competition_id'];settype($competition_id, INT);
 		pl_export_competition($competition_id);
 		exit;
-		}		
+		}
 
-		
-		
+
+
 /* get the options */
 if ($pl_optionstring = get_option('predictionleague_options')){
-	$pl_options = pl_read_option_string($pl_optionstring);} 
+	$pl_options = pl_read_option_string($pl_optionstring);}
 else {
 	$pl_options = pl_set_default_options_array();
 	$option_string = pl_create_option_string($pl_options);
@@ -52,12 +52,13 @@ if (file_exists(plugin_dir_path( __FILE__ ) ."/language/".$pl_options['language'
 			if(is_page($page_id) AND $page_id!="")
 			{
 			echo $content;
+			echo 'hu';
 			include_once (plugin_dir_path( __FILE__ ) ."view.php");
 			}
-			else	
+			else
 			{return $content;}
 		}
-	/* if everything is ok */	
+	/* if everything is ok */
 	if (pl_check_tables()){
 		/* check the next round */
 		pl_check_next_day();
@@ -74,7 +75,7 @@ if (file_exists(plugin_dir_path( __FILE__ ) ."/language/".$pl_options['language'
 
 		add_submenu_page( 'predictionleague' , __('competitions', 'predictionleague'), __('Competitions', 'predictionleague'), 'edit_others_posts',
 		'competitions', 'pl_competition_page');
-		
+
 		add_submenu_page( 'predictionleague' , __('infos', 'predictionleague'), __('Help/Infos', 'predictionleague'), 'edit_others_posts',
 		'infos', 'pl_info_page');
 		}
@@ -91,9 +92,9 @@ if (file_exists(plugin_dir_path( __FILE__ ) ."/language/".$pl_options['language'
 		    wp_register_style( 'pl_style', plugins_url('styles.php?colors='.$pl_options['color1'].'-'.$pl_options['color2'].'-'.$pl_options['color3'].'-'.$pl_options['color4'].'&pluginurl='.$pluginurl, __FILE__), false, '1.0', 'all');
 		    wp_enqueue_style( 'pl_style' );
 		}
-		
-		add_action( 'wp_enqueue_scripts', 'pl_scripts' ); 	
-	
+
+		add_action( 'wp_enqueue_scripts', 'pl_scripts' );
+
 /**
  * metatags
  * since 1.0

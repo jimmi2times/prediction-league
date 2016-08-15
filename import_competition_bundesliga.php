@@ -1,4 +1,4 @@
-<?php 
+<?php
 global $filename;
 
 
@@ -15,7 +15,7 @@ $options_new['name'] = '';
 
 
 /* write the new competiton */
-$form['name'] = "Bundesliga 2015/16";
+$form['name'] = "Bundesliga 2016/17";
 $form['rounds'] = 34;
 $form['round_names'] = '';
 /* get the new competition_id and save */
@@ -23,8 +23,8 @@ $form['round_names'] = '';
 $competition_id = pl_save_competition($form);
 
 for ($x = 1; $x <= 34; $x++){
-	
-	$url = "http://www.openligadb.de/api/getmatchdata/bl1/2015/".$x;
+
+	$url = "http://www.openligadb.de/api/getmatchdata/bl1/2016/".$x;
 	$data = file_get_contents($url);
 	$json = json_decode($data, true);
 	if ($json){
@@ -37,9 +37,9 @@ for ($x = 1; $x <= 34; $x++){
 			$games[$game['MatchID']]['gametime'] = strtotime($game['MatchDateTime']);
 			$games[$game['MatchID']]['team1'] = $game['Team1']['TeamId'];
 			$games[$game['MatchID']]['team2'] = $game['Team2']['TeamId'];
-			$games[$game['MatchID']]['round'] = $x; 
-			
-		}		
+			$games[$game['MatchID']]['round'] = $x;
+
+		}
 	}
 }
 
@@ -53,8 +53,8 @@ foreach ($teams as $key => $team){
 
 	$team['competition_id'] = $competition_id;
 	$team['team_name'] = trim($team['team_name']);
-	
-	
+
+
 	$new_teams[$key]['team_id'] = pl_save_team($team);
 	$new_teams[$key]['team_name'] = $team['team_name'];
 }
@@ -78,7 +78,7 @@ foreach ($games as $game){
 		$form['round'] = $game['round'];
 		$form['competition_id'] = $competition_id;
 		pl_save_game($form);
-	
+
 }
 
 /* ready */
