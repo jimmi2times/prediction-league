@@ -18,6 +18,11 @@ Prediction League provides a self hosted game for your readers. You can import, 
 Upload the plugin to your blog, Activate it, create a static page, include the id of the page in the prediction league options, import or create a competition. let the games begin
 More infos/faq/screenshots: http://liga.parkdrei.de/category/das-spiel-hier/predictionleague/
 
+KnownIssues
+=> problem with the jetpack "publicise" function => crashes layout
+
+
+
 == Changelog ==
 2.1.2
 the option to show the link to the pluginpage is now default "off"
@@ -31,7 +36,7 @@ renamed some functions with pl_ prefix
 2.1
 removed the worldcup only bracket game
 included the schedule for the german "Bundesliga 2014/15"  and the "2. Bundesliga" as default competitions
-bugfixes: 
+bugfixes:
 - create a new game
 - show different competitions in a nice way
 - no more "7 characters" display bug while the plugin activation
@@ -42,7 +47,7 @@ input type=tel for tips (better for mobile devices)
 
 2.0.2
 fixed a bug, which made it impossible to reach the total score
-fixed a bug with wrong directories of the up and down arrows 
+fixed a bug with wrong directories of the up and down arrows
 
 2.0.1
 include the wordpress files of jquery and jquery ui (http://codex.wordpress.org/Function_Reference/wp_enqueue_script)
@@ -54,7 +59,7 @@ some spelling corrections
 
 
 
-2.0 
+2.0
 several bugfixes
 bracket game for the worldcup 2014
 quick installation of the schedule of the world cup 2014
