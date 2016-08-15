@@ -1,0 +1,23 @@
+The NoGray Web Applications are released under the GNU General Public License;
+however, you cannot modify the credits on top of each file nor remove them. 
+
+If you would like to use the NoGray Web Applications in any commercial product,
+you must get a written permission from the NoGray first. Failure to do so
+can result in legal actions. 
+
+For more details about the GNU General Public License, please go to
+http://www.gnu.org/copyleft/gpl.html
+
+Note: YOU CANNOT SELL THIS LIBRARY FOR ANY REASON EITHER AS STAND ALONE PRODUCT
+	OR AS A PART OF ANOTHER PACKAGE WITHOUT A WRITTEN PERMISSION FROM THE NOGRAY
+	
+Some files may contain a link to the NoGray.com, we ask you not to remove the links
+to help spread the word of our products.
+	
+This file is designed and written by: Wesam Saif
+Contact: admin@nogray.com
+Support: support@nogray.com
+URL: http://www.nogray.com
+Support URL: http://www.nogray.com/phpbb/
+
+For customization and advance editing, please contact us at sales@nogray.com

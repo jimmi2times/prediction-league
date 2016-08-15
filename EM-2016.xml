@@ -1,0 +1,376 @@
+<competition>
+	<options>
+		<name>EM 2016</name>
+		<rounds>7</rounds>
+		<round_names>Vorrunde (1);Vorrunde (2);Vorrunde (3);Achtelfinale;Viertelfinale;Halbfinale;Finale</round_names>
+	</options>
+	<teams>
+		<team id="557">
+			<team_name>Frankreich</team_name>
+			<team_shortname>FRA</team_shortname>
+		</team>
+		<team id="558">
+			<team_name>Rumänien</team_name>
+			<team_shortname>ROM</team_shortname>
+		</team>
+		<team id="559">
+			<team_name>Albanien</team_name>
+			<team_shortname>ALB</team_shortname>
+		</team>
+		<team id="560">
+			<team_name>Schweiz</team_name>
+			<team_shortname>SUI</team_shortname>
+		</team>
+		<team id="561">
+			<team_name>England</team_name>
+			<team_shortname>ENG</team_shortname>
+		</team>
+		<team id="562">
+			<team_name>Russland</team_name>
+			<team_shortname>RUS</team_shortname>
+		</team>
+		<team id="563">
+			<team_name>Wales</team_name>
+			<team_shortname>WAL</team_shortname>
+		</team>
+		<team id="564">
+			<team_name>Slowakei</team_name>
+			<team_shortname>SLV</team_shortname>
+		</team>
+		<team id="565">
+			<team_name>Deutschland</team_name>
+			<team_shortname>GER</team_shortname>
+		</team>
+		<team id="566">
+			<team_name>Ukraine</team_name>
+			<team_shortname>UKR</team_shortname>
+		</team>
+		<team id="567">
+			<team_name>Polen</team_name>
+			<team_shortname>POL</team_shortname>
+		</team>
+		<team id="568">
+			<team_name>Nordirland</team_name>
+			<team_shortname>NIR</team_shortname>
+		</team>
+		<team id="569">
+			<team_name>Spanien</team_name>
+			<team_shortname>ESP</team_shortname>
+		</team>
+		<team id="570">
+			<team_name>Tschechien</team_name>
+			<team_shortname>CZE</team_shortname>
+		</team>
+		<team id="571">
+			<team_name>Türkei</team_name>
+			<team_shortname>TUR</team_shortname>
+		</team>
+		<team id="572">
+			<team_name>Kroatien</team_name>
+			<team_shortname>CRO</team_shortname>
+		</team>
+		<team id="573">
+			<team_name>Belgien</team_name>
+			<team_shortname>BEL</team_shortname>
+		</team>
+		<team id="574">
+			<team_name>Italien</team_name>
+			<team_shortname>ITA</team_shortname>
+		</team>
+		<team id="575">
+			<team_name>Irland</team_name>
+			<team_shortname>IRE</team_shortname>
+		</team>
+		<team id="576">
+			<team_name>Schweden</team_name>
+			<team_shortname>SWE</team_shortname>
+		</team>
+		<team id="577">
+			<team_name>Portugal</team_name>
+			<team_shortname>POR</team_shortname>
+		</team>
+		<team id="578">
+			<team_name>Island</team_name>
+			<team_shortname>ISL</team_shortname>
+		</team>
+		<team id="579">
+			<team_name>Österreich</team_name>
+			<team_shortname>AUT</team_shortname>
+		</team>
+		<team id="580">
+			<team_name>Ungarn</team_name>
+			<team_shortname>HUN</team_shortname>
+		</team>
+	</teams>
+	<games>
+		<round number="1">
+			<game id="7944">
+				<gametime>1465592400</gametime>
+				<team1>557</team1>
+				<team2>558</team2>
+			</game>
+			<game id="7943">
+				<gametime>1465657200</gametime>
+				<team1>559</team1>
+				<team2>560</team2>
+			</game>
+			<game id="7935">
+				<gametime>1465668000</gametime>
+				<team1>563</team1>
+				<team2>564</team2>
+			</game>
+			<game id="7936">
+				<gametime>1465678800</gametime>
+				<team1>561</team1>
+				<team2>562</team2>
+			</game>
+			<game id="7937">
+				<gametime>1465743600</gametime>
+				<team1>571</team1>
+				<team2>572</team2>
+			</game>
+			<game id="7938">
+				<gametime>1465754400</gametime>
+				<team1>567</team1>
+				<team2>568</team2>
+			</game>
+			<game id="7939">
+				<gametime>1465765200</gametime>
+				<team1>565</team1>
+				<team2>566</team2>
+			</game>
+			<game id="7940">
+				<gametime>1465830000</gametime>
+				<team1>569</team1>
+				<team2>570</team2>
+			</game>
+			<game id="7941">
+				<gametime>1465840800</gametime>
+				<team1>575</team1>
+				<team2>576</team2>
+			</game>
+			<game id="7942">
+				<gametime>1465851600</gametime>
+				<team1>573</team1>
+				<team2>574</team2>
+			</game>
+			<game id="7934">
+				<gametime>1465927200</gametime>
+				<team1>579</team1>
+				<team2>580</team2>
+			</game>
+			<game id="7933">
+				<gametime>1465938000</gametime>
+				<team1>577</team1>
+				<team2>578</team2>
+			</game>
+		</round>
+		<round number="2">
+			<game id="7956">
+				<gametime>1466002800</gametime>
+				<team1>562</team1>
+				<team2>564</team2>
+			</game>
+			<game id="7946">
+				<gametime>1466013600</gametime>
+				<team1>558</team1>
+				<team2>560</team2>
+			</game>
+			<game id="7947">
+				<gametime>1466024400</gametime>
+				<team1>557</team1>
+				<team2>559</team2>
+			</game>
+			<game id="7948">
+				<gametime>1466089200</gametime>
+				<team1>561</team1>
+				<team2>563</team2>
+			</game>
+			<game id="7949">
+				<gametime>1466100000</gametime>
+				<team1>566</team1>
+				<team2>568</team2>
+			</game>
+			<game id="7950">
+				<gametime>1466110800</gametime>
+				<team1>565</team1>
+				<team2>567</team2>
+			</game>
+			<game id="7951">
+				<gametime>1466175600</gametime>
+				<team1>574</team1>
+				<team2>576</team2>
+			</game>
+			<game id="7952">
+				<gametime>1466186400</gametime>
+				<team1>570</team1>
+				<team2>572</team2>
+			</game>
+			<game id="7953">
+				<gametime>1466197200</gametime>
+				<team1>569</team1>
+				<team2>571</team2>
+			</game>
+			<game id="7954">
+				<gametime>1466262000</gametime>
+				<team1>573</team1>
+				<team2>575</team2>
+			</game>
+			<game id="7955">
+				<gametime>1466272800</gametime>
+				<team1>578</team1>
+				<team2>580</team2>
+			</game>
+			<game id="7945">
+				<gametime>1466283600</gametime>
+				<team1>577</team1>
+				<team2>579</team2>
+			</game>
+		</round>
+		<round number="3">
+			<game id="7968">
+				<gametime>1466370000</gametime>
+				<team1>560</team1>
+				<team2>557</team2>
+			</game>
+			<game id="7958">
+				<gametime>1466370000</gametime>
+				<team1>558</team1>
+				<team2>559</team2>
+			</game>
+			<game id="7959">
+				<gametime>1466456400</gametime>
+				<team1>564</team1>
+				<team2>561</team2>
+			</game>
+			<game id="7960">
+				<gametime>1466456400</gametime>
+				<team1>562</team1>
+				<team2>563</team2>
+			</game>
+			<game id="7961">
+				<gametime>1466532000</gametime>
+				<team1>566</team1>
+				<team2>567</team2>
+			</game>
+			<game id="7962">
+				<gametime>1466532000</gametime>
+				<team1>568</team1>
+				<team2>565</team2>
+			</game>
+			<game id="7963">
+				<gametime>1466542800</gametime>
+				<team1>572</team1>
+				<team2>569</team2>
+			</game>
+			<game id="7964">
+				<gametime>1466542800</gametime>
+				<team1>570</team1>
+				<team2>571</team2>
+			</game>
+			<game id="7965">
+				<gametime>1466618400</gametime>
+				<team1>580</team1>
+				<team2>577</team2>
+			</game>
+			<game id="7966">
+				<gametime>1466618400</gametime>
+				<team1>578</team1>
+				<team2>579</team2>
+			</game>
+			<game id="7967">
+				<gametime>1466629200</gametime>
+				<team1>574</team1>
+				<team2>575</team2>
+			</game>
+			<game id="7957">
+				<gametime>1466629200</gametime>
+				<team1>576</team1>
+				<team2>573</team2>
+			</game>
+		</round>
+		<round number="4">
+			<game id="7976">
+				<gametime>1466866800</gametime>
+				<team1>0</team1>
+				<team2>0</team2>
+			</game>
+			<game id="7975">
+				<gametime>1466877600</gametime>
+				<team1>0</team1>
+				<team2>0</team2>
+			</game>
+			<game id="7974">
+				<gametime>1466888400</gametime>
+				<team1>0</team1>
+				<team2>0</team2>
+			</game>
+			<game id="7973">
+				<gametime>1466953200</gametime>
+				<team1>0</team1>
+				<team2>0</team2>
+			</game>
+			<game id="7972">
+				<gametime>1466964000</gametime>
+				<team1>0</team1>
+				<team2>0</team2>
+			</game>
+			<game id="7971">
+				<gametime>1466974800</gametime>
+				<team1>0</team1>
+				<team2>0</team2>
+			</game>
+			<game id="7970">
+				<gametime>1467050400</gametime>
+				<team1>0</team1>
+				<team2>0</team2>
+			</game>
+			<game id="7969">
+				<gametime>1467061200</gametime>
+				<team1>0</team1>
+				<team2>0</team2>
+			</game>
+		</round>
+		<round number="5">
+			<game id="7980">
+				<gametime>1467320400</gametime>
+				<team1>0</team1>
+				<team2>0</team2>
+			</game>
+			<game id="7979">
+				<gametime>1467406800</gametime>
+				<team1>0</team1>
+				<team2>0</team2>
+			</game>
+			<game id="7978">
+				<gametime>1467493200</gametime>
+				<team1>0</team1>
+				<team2>0</team2>
+			</game>
+			<game id="7977">
+				<gametime>1467579600</gametime>
+				<team1>0</team1>
+				<team2>0</team2>
+			</game>
+		</round>
+		<round number="6">
+			<game id="7981">
+				<gametime>1467838800</gametime>
+				<team1>0</team1>
+				<team2>0</team2>
+			</game>
+			<game id="7982">
+				<gametime>1467925200</gametime>
+				<team1>0</team1>
+				<team2>0</team2>
+			</game>
+		</round>
+		<round number="7">
+			<game id="7983">
+				<gametime>1468184400</gametime>
+				<team1>0</team1>
+				<team2>0</team2>
+			</game>
+		</round>
+	</games>
+</competition>

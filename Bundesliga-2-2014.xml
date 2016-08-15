@@ -1,0 +1,1681 @@
+<competition>
+	<options>
+		<name>2. Bundesliga 2014/15</name>
+		<rounds>34</rounds>
+		<round_names></round_names>
+	</options>
+	<teams>
+		<team id="40">
+			<team_name>Fortuna Düsseldorf</team_name>
+			<team_shortname>F95</team_shortname>
+		</team>
+		<team id="41">
+			<team_name>1. FC Nürnberg</team_name>
+			<team_shortname>FCN</team_shortname>
+		</team>
+		<team id="42">
+			<team_name>1. FC Kaiserslautern</team_name>
+			<team_shortname>FCK</team_shortname>
+		</team>
+		<team id="43">
+			<team_name>Karlsruher SC</team_name>
+			<team_shortname>KSC</team_shortname>
+		</team>
+		<team id="44">
+			<team_name>FC St. Pauli</team_name>
+			<team_shortname>PAU</team_shortname>
+		</team>
+		<team id="45">
+			<team_name>VfL Bochum</team_name>
+			<team_shortname>BOC</team_shortname>
+		</team>
+		<team id="46">
+			<team_name>1. FC Heidenheim</team_name>
+			<team_shortname>HEI</team_shortname>
+		</team>
+		<team id="47">
+			<team_name>RB Leipzig</team_name>
+			<team_shortname>RBL</team_shortname>
+		</team>
+		<team id="48">
+			<team_name>SV Darmstadt 98</team_name>
+			<team_shortname>D98</team_shortname>
+		</team>
+		<team id="49">
+			<team_name>Eintracht Braunschweig</team_name>
+			<team_shortname>EBR</team_shortname>
+		</team>
+		<team id="50">
+			<team_name>SpVgg Greuther Fürth</team_name>
+			<team_shortname>GFU</team_shortname>
+		</team>
+		<team id="51">
+			<team_name>TSV 1860 München</team_name>
+			<team_shortname>MUC</team_shortname>
+		</team>
+		<team id="52">
+			<team_name>1. FC Union Berlin</team_name>
+			<team_shortname>UBE</team_shortname>
+		</team>
+		<team id="53">
+			<team_name>FC Ingolstadt 04</team_name>
+			<team_shortname>FCI</team_shortname>
+		</team>
+		<team id="54">
+			<team_name>VfR Aalen</team_name>
+			<team_shortname>AAL</team_shortname>
+		</team>
+		<team id="55">
+			<team_name>SV Sandhausen</team_name>
+			<team_shortname>SVS</team_shortname>
+		</team>
+		<team id="56">
+			<team_name>FSV Frankfurt</team_name>
+			<team_shortname>FSV</team_shortname>
+		</team>
+		<team id="57">
+			<team_name>FC Erzgebirge Aue</team_name>
+			<team_shortname>AUE</team_shortname>
+		</team>
+	</teams>
+	<games>
+		<round number="1">
+			<game id="616">
+				<gametime>1406925000</gametime>
+				<team1>40</team1>
+				<team2>49</team2>
+			</game>
+			<game id="623">
+				<gametime>1406984400</gametime>
+				<team1>47</team1>
+				<team2>54</team2>
+			</game>
+			<game id="620">
+				<gametime>1406993400</gametime>
+				<team1>44</team1>
+				<team2>53</team2>
+			</game>
+			<game id="621">
+				<gametime>1406993400</gametime>
+				<team1>45</team1>
+				<team2>50</team2>
+			</game>
+			<game id="622">
+				<gametime>1407072600</gametime>
+				<team1>46</team1>
+				<team2>56</team2>
+			</game>
+			<game id="617">
+				<gametime>1407079800</gametime>
+				<team1>41</team1>
+				<team2>57</team2>
+			</game>
+			<game id="619">
+				<gametime>1407079800</gametime>
+				<team1>43</team1>
+				<team2>52</team2>
+			</game>
+			<game id="624">
+				<gametime>1407079800</gametime>
+				<team1>48</team1>
+				<team2>55</team2>
+			</game>
+			<game id="618">
+				<gametime>1407183300</gametime>
+				<team1>42</team1>
+				<team2>51</team2>
+			</game>
+		</round>
+		<round number="2">
+			<game id="630">
+				<gametime>1407522600</gametime>
+				<team1>54</team1>
+				<team2>44</team2>
+			</game>
+			<game id="632">
+				<gametime>1407522600</gametime>
+				<team1>56</team1>
+				<team2>43</team2>
+			</game>
+			<game id="628">
+				<gametime>1407529800</gametime>
+				<team1>52</team1>
+				<team2>40</team2>
+			</game>
+			<game id="625">
+				<gametime>1407598200</gametime>
+				<team1>49</team1>
+				<team2>46</team2>
+			</game>
+			<game id="633">
+				<gametime>1407598200</gametime>
+				<team1>57</team1>
+				<team2>45</team2>
+			</game>
+			<game id="629">
+				<gametime>1407677400</gametime>
+				<team1>53</team1>
+				<team2>48</team2>
+			</game>
+			<game id="627">
+				<gametime>1407684600</gametime>
+				<team1>51</team1>
+				<team2>47</team2>
+			</game>
+			<game id="631">
+				<gametime>1407684600</gametime>
+				<team1>55</team1>
+				<team2>42</team2>
+			</game>
+			<game id="626">
+				<gametime>1407788100</gametime>
+				<team1>50</team1>
+				<team2>41</team2>
+			</game>
+		</round>
+		<round number="3">
+			<game id="637">
+				<gametime>1408732200</gametime>
+				<team1>44</team1>
+				<team2>55</team2>
+			</game>
+			<game id="640">
+				<gametime>1408732200</gametime>
+				<team1>46</team1>
+				<team2>51</team2>
+			</game>
+			<game id="641">
+				<gametime>1408732200</gametime>
+				<team1>47</team1>
+				<team2>57</team2>
+			</game>
+			<game id="634">
+				<gametime>1408798800</gametime>
+				<team1>41</team1>
+				<team2>56</team2>
+			</game>
+			<game id="636">
+				<gametime>1408798800</gametime>
+				<team1>40</team1>
+				<team2>43</team2>
+			</game>
+			<game id="635">
+				<gametime>1408887000</gametime>
+				<team1>42</team1>
+				<team2>49</team2>
+			</game>
+			<game id="638">
+				<gametime>1408887000</gametime>
+				<team1>53</team1>
+				<team2>50</team2>
+			</game>
+			<game id="642">
+				<gametime>1408887000</gametime>
+				<team1>48</team1>
+				<team2>54</team2>
+			</game>
+			<game id="639">
+				<gametime>1408997700</gametime>
+				<team1>45</team1>
+				<team2>52</team2>
+			</game>
+		</round>
+		<round number="4">
+			<game id="647">
+				<gametime>1409337000</gametime>
+				<team1>52</team1>
+				<team2>41</team2>
+			</game>
+			<game id="648">
+				<gametime>1409337000</gametime>
+				<team1>54</team1>
+				<team2>42</team2>
+			</game>
+			<game id="650">
+				<gametime>1409337000</gametime>
+				<team1>56</team1>
+				<team2>47</team2>
+			</game>
+			<game id="645">
+				<gametime>1409403600</gametime>
+				<team1>43</team1>
+				<team2>46</team2>
+			</game>
+			<game id="651">
+				<gametime>1409403600</gametime>
+				<team1>57</team1>
+				<team2>40</team2>
+			</game>
+			<game id="643">
+				<gametime>1409491800</gametime>
+				<team1>49</team1>
+				<team2>45</team2>
+			</game>
+			<game id="646">
+				<gametime>1409491800</gametime>
+				<team1>51</team1>
+				<team2>48</team2>
+			</game>
+			<game id="649">
+				<gametime>1409491800</gametime>
+				<team1>55</team1>
+				<team2>53</team2>
+			</game>
+			<game id="644">
+				<gametime>1409602500</gametime>
+				<team1>50</team1>
+				<team2>44</team2>
+			</game>
+		</round>
+		<round number="5">
+			<game id="653">
+				<gametime>1410546600</gametime>
+				<team1>42</team1>
+				<team2>56</team2>
+			</game>
+			<game id="655">
+				<gametime>1410546600</gametime>
+				<team1>53</team1>
+				<team2>54</team2>
+			</game>
+			<game id="657">
+				<gametime>1410546600</gametime>
+				<team1>45</team1>
+				<team2>43</team2>
+			</game>
+			<game id="659">
+				<gametime>1410613200</gametime>
+				<team1>47</team1>
+				<team2>49</team2>
+			</game>
+			<game id="660">
+				<gametime>1410613200</gametime>
+				<team1>48</team1>
+				<team2>57</team2>
+			</game>
+			<game id="654">
+				<gametime>1410701400</gametime>
+				<team1>44</team1>
+				<team2>51</team2>
+			</game>
+			<game id="656">
+				<gametime>1410701400</gametime>
+				<team1>55</team1>
+				<team2>50</team2>
+			</game>
+			<game id="658">
+				<gametime>1410701400</gametime>
+				<team1>46</team1>
+				<team2>52</team2>
+			</game>
+			<game id="652">
+				<gametime>1410812100</gametime>
+				<team1>41</team1>
+				<team2>40</team2>
+			</game>
+		</round>
+		<round number="6">
+			<game id="661">
+				<gametime>1411151400</gametime>
+				<team1>49</team1>
+				<team2>48</team2>
+			</game>
+			<game id="667">
+				<gametime>1411151400</gametime>
+				<team1>54</team1>
+				<team2>55</team2>
+			</game>
+			<game id="669">
+				<gametime>1411151400</gametime>
+				<team1>57</team1>
+				<team2>44</team2>
+			</game>
+			<game id="662">
+				<gametime>1411218000</gametime>
+				<team1>50</team1>
+				<team2>42</team2>
+			</game>
+			<game id="665">
+				<gametime>1411218000</gametime>
+				<team1>51</team1>
+				<team2>53</team2>
+			</game>
+			<game id="668">
+				<gametime>1411218000</gametime>
+				<team1>56</team1>
+				<team2>45</team2>
+			</game>
+			<game id="663">
+				<gametime>1411306200</gametime>
+				<team1>43</team1>
+				<team2>41</team2>
+			</game>
+			<game id="664">
+				<gametime>1411306200</gametime>
+				<team1>40</team1>
+				<team2>46</team2>
+			</game>
+			<game id="666">
+				<gametime>1411306200</gametime>
+				<team1>52</team1>
+				<team2>47</team2>
+			</game>
+		</round>
+		<round number="7">
+			<game id="670">
+				<gametime>1411493400</gametime>
+				<team1>50</team1>
+				<team2>54</team2>
+			</game>
+			<game id="671">
+				<gametime>1411493400</gametime>
+				<team1>42</team1>
+				<team2>52</team2>
+			</game>
+			<game id="672">
+				<gametime>1411493400</gametime>
+				<team1>44</team1>
+				<team2>49</team2>
+			</game>
+			<game id="673">
+				<gametime>1411493400</gametime>
+				<team1>53</team1>
+				<team2>57</team2>
+			</game>
+			<game id="674">
+				<gametime>1411493400</gametime>
+				<team1>55</team1>
+				<team2>51</team2>
+			</game>
+			<game id="675">
+				<gametime>1411493400</gametime>
+				<team1>45</team1>
+				<team2>40</team2>
+			</game>
+			<game id="676">
+				<gametime>1411493400</gametime>
+				<team1>46</team1>
+				<team2>41</team2>
+			</game>
+			<game id="677">
+				<gametime>1411493400</gametime>
+				<team1>47</team1>
+				<team2>43</team2>
+			</game>
+			<game id="678">
+				<gametime>1411493400</gametime>
+				<team1>48</team1>
+				<team2>56</team2>
+			</game>
+		</round>
+		<round number="8">
+			<game id="679">
+				<gametime>1411756200</gametime>
+				<team1>41</team1>
+				<team2>42</team2>
+			</game>
+			<game id="680">
+				<gametime>1411756200</gametime>
+				<team1>49</team1>
+				<team2>55</team2>
+			</game>
+			<game id="681">
+				<gametime>1411756200</gametime>
+				<team1>43</team1>
+				<team2>53</team2>
+			</game>
+			<game id="682">
+				<gametime>1411756200</gametime>
+				<team1>40</team1>
+				<team2>47</team2>
+			</game>
+			<game id="683">
+				<gametime>1411756200</gametime>
+				<team1>51</team1>
+				<team2>50</team2>
+			</game>
+			<game id="684">
+				<gametime>1411756200</gametime>
+				<team1>52</team1>
+				<team2>48</team2>
+			</game>
+			<game id="685">
+				<gametime>1411756200</gametime>
+				<team1>56</team1>
+				<team2>44</team2>
+			</game>
+			<game id="686">
+				<gametime>1411756200</gametime>
+				<team1>57</team1>
+				<team2>54</team2>
+			</game>
+			<game id="687">
+				<gametime>1411756200</gametime>
+				<team1>46</team1>
+				<team2>45</team2>
+			</game>
+		</round>
+		<round number="9">
+			<game id="688">
+				<gametime>1412361000</gametime>
+				<team1>50</team1>
+				<team2>57</team2>
+			</game>
+			<game id="689">
+				<gametime>1412361000</gametime>
+				<team1>42</team1>
+				<team2>43</team2>
+			</game>
+			<game id="690">
+				<gametime>1412361000</gametime>
+				<team1>44</team1>
+				<team2>52</team2>
+			</game>
+			<game id="691">
+				<gametime>1412361000</gametime>
+				<team1>53</team1>
+				<team2>49</team2>
+			</game>
+			<game id="692">
+				<gametime>1412361000</gametime>
+				<team1>54</team1>
+				<team2>51</team2>
+			</game>
+			<game id="693">
+				<gametime>1412361000</gametime>
+				<team1>55</team1>
+				<team2>56</team2>
+			</game>
+			<game id="694">
+				<gametime>1412361000</gametime>
+				<team1>45</team1>
+				<team2>41</team2>
+			</game>
+			<game id="695">
+				<gametime>1412361000</gametime>
+				<team1>47</team1>
+				<team2>46</team2>
+			</game>
+			<game id="696">
+				<gametime>1412361000</gametime>
+				<team1>48</team1>
+				<team2>40</team2>
+			</game>
+		</round>
+		<round number="10">
+			<game id="697">
+				<gametime>1413570600</gametime>
+				<team1>41</team1>
+				<team2>47</team2>
+			</game>
+			<game id="698">
+				<gametime>1413570600</gametime>
+				<team1>49</team1>
+				<team2>50</team2>
+			</game>
+			<game id="699">
+				<gametime>1413570600</gametime>
+				<team1>43</team1>
+				<team2>54</team2>
+			</game>
+			<game id="700">
+				<gametime>1413570600</gametime>
+				<team1>40</team1>
+				<team2>44</team2>
+			</game>
+			<game id="701">
+				<gametime>1413570600</gametime>
+				<team1>52</team1>
+				<team2>55</team2>
+			</game>
+			<game id="702">
+				<gametime>1413570600</gametime>
+				<team1>56</team1>
+				<team2>53</team2>
+			</game>
+			<game id="703">
+				<gametime>1413570600</gametime>
+				<team1>57</team1>
+				<team2>51</team2>
+			</game>
+			<game id="704">
+				<gametime>1413570600</gametime>
+				<team1>45</team1>
+				<team2>48</team2>
+			</game>
+			<game id="705">
+				<gametime>1413570600</gametime>
+				<team1>46</team1>
+				<team2>42</team2>
+			</game>
+		</round>
+		<round number="11">
+			<game id="706">
+				<gametime>1414175400</gametime>
+				<team1>50</team1>
+				<team2>56</team2>
+			</game>
+			<game id="707">
+				<gametime>1414175400</gametime>
+				<team1>42</team1>
+				<team2>40</team2>
+			</game>
+			<game id="708">
+				<gametime>1414175400</gametime>
+				<team1>51</team1>
+				<team2>49</team2>
+			</game>
+			<game id="709">
+				<gametime>1414175400</gametime>
+				<team1>44</team1>
+				<team2>43</team2>
+			</game>
+			<game id="710">
+				<gametime>1414175400</gametime>
+				<team1>53</team1>
+				<team2>46</team2>
+			</game>
+			<game id="711">
+				<gametime>1414175400</gametime>
+				<team1>54</team1>
+				<team2>52</team2>
+			</game>
+			<game id="712">
+				<gametime>1414175400</gametime>
+				<team1>55</team1>
+				<team2>57</team2>
+			</game>
+			<game id="713">
+				<gametime>1414175400</gametime>
+				<team1>47</team1>
+				<team2>45</team2>
+			</game>
+			<game id="714">
+				<gametime>1414175400</gametime>
+				<team1>48</team1>
+				<team2>41</team2>
+			</game>
+		</round>
+		<round number="12">
+			<game id="715">
+				<gametime>1414780200</gametime>
+				<team1>41</team1>
+				<team2>44</team2>
+			</game>
+			<game id="716">
+				<gametime>1414780200</gametime>
+				<team1>49</team1>
+				<team2>54</team2>
+			</game>
+			<game id="717">
+				<gametime>1414780200</gametime>
+				<team1>43</team1>
+				<team2>55</team2>
+			</game>
+			<game id="718">
+				<gametime>1414780200</gametime>
+				<team1>40</team1>
+				<team2>53</team2>
+			</game>
+			<game id="719">
+				<gametime>1414780200</gametime>
+				<team1>52</team1>
+				<team2>50</team2>
+			</game>
+			<game id="720">
+				<gametime>1414780200</gametime>
+				<team1>56</team1>
+				<team2>57</team2>
+			</game>
+			<game id="721">
+				<gametime>1414780200</gametime>
+				<team1>45</team1>
+				<team2>51</team2>
+			</game>
+			<game id="722">
+				<gametime>1414780200</gametime>
+				<team1>46</team1>
+				<team2>48</team2>
+			</game>
+			<game id="723">
+				<gametime>1414780200</gametime>
+				<team1>47</team1>
+				<team2>42</team2>
+			</game>
+		</round>
+		<round number="13">
+			<game id="724">
+				<gametime>1415385000</gametime>
+				<team1>50</team1>
+				<team2>43</team2>
+			</game>
+			<game id="725">
+				<gametime>1415385000</gametime>
+				<team1>42</team1>
+				<team2>45</team2>
+			</game>
+			<game id="726">
+				<gametime>1415385000</gametime>
+				<team1>51</team1>
+				<team2>40</team2>
+			</game>
+			<game id="727">
+				<gametime>1415385000</gametime>
+				<team1>44</team1>
+				<team2>46</team2>
+			</game>
+			<game id="728">
+				<gametime>1415385000</gametime>
+				<team1>53</team1>
+				<team2>52</team2>
+			</game>
+			<game id="729">
+				<gametime>1415385000</gametime>
+				<team1>54</team1>
+				<team2>56</team2>
+			</game>
+			<game id="730">
+				<gametime>1415385000</gametime>
+				<team1>55</team1>
+				<team2>41</team2>
+			</game>
+			<game id="731">
+				<gametime>1415385000</gametime>
+				<team1>57</team1>
+				<team2>49</team2>
+			</game>
+			<game id="732">
+				<gametime>1415385000</gametime>
+				<team1>48</team1>
+				<team2>47</team2>
+			</game>
+		</round>
+		<round number="14">
+			<game id="733">
+				<gametime>1416594600</gametime>
+				<team1>41</team1>
+				<team2>53</team2>
+			</game>
+			<game id="734">
+				<gametime>1416594600</gametime>
+				<team1>42</team1>
+				<team2>48</team2>
+			</game>
+			<game id="735">
+				<gametime>1416594600</gametime>
+				<team1>43</team1>
+				<team2>57</team2>
+			</game>
+			<game id="736">
+				<gametime>1416594600</gametime>
+				<team1>40</team1>
+				<team2>50</team2>
+			</game>
+			<game id="737">
+				<gametime>1416594600</gametime>
+				<team1>52</team1>
+				<team2>51</team2>
+			</game>
+			<game id="738">
+				<gametime>1416594600</gametime>
+				<team1>56</team1>
+				<team2>49</team2>
+			</game>
+			<game id="739">
+				<gametime>1416594600</gametime>
+				<team1>45</team1>
+				<team2>54</team2>
+			</game>
+			<game id="740">
+				<gametime>1416594600</gametime>
+				<team1>46</team1>
+				<team2>55</team2>
+			</game>
+			<game id="741">
+				<gametime>1416594600</gametime>
+				<team1>47</team1>
+				<team2>44</team2>
+			</game>
+		</round>
+		<round number="15">
+			<game id="742">
+				<gametime>1417199400</gametime>
+				<team1>49</team1>
+				<team2>41</team2>
+			</game>
+			<game id="743">
+				<gametime>1417199400</gametime>
+				<team1>50</team1>
+				<team2>46</team2>
+			</game>
+			<game id="744">
+				<gametime>1417199400</gametime>
+				<team1>51</team1>
+				<team2>56</team2>
+			</game>
+			<game id="745">
+				<gametime>1417199400</gametime>
+				<team1>44</team1>
+				<team2>42</team2>
+			</game>
+			<game id="746">
+				<gametime>1417199400</gametime>
+				<team1>53</team1>
+				<team2>45</team2>
+			</game>
+			<game id="747">
+				<gametime>1417199400</gametime>
+				<team1>54</team1>
+				<team2>40</team2>
+			</game>
+			<game id="748">
+				<gametime>1417199400</gametime>
+				<team1>55</team1>
+				<team2>47</team2>
+			</game>
+			<game id="749">
+				<gametime>1417199400</gametime>
+				<team1>57</team1>
+				<team2>52</team2>
+			</game>
+			<game id="750">
+				<gametime>1417199400</gametime>
+				<team1>48</team1>
+				<team2>43</team2>
+			</game>
+		</round>
+		<round number="16">
+			<game id="751">
+				<gametime>1417804200</gametime>
+				<team1>41</team1>
+				<team2>51</team2>
+			</game>
+			<game id="752">
+				<gametime>1417804200</gametime>
+				<team1>42</team1>
+				<team2>57</team2>
+			</game>
+			<game id="753">
+				<gametime>1417804200</gametime>
+				<team1>43</team1>
+				<team2>49</team2>
+			</game>
+			<game id="754">
+				<gametime>1417804200</gametime>
+				<team1>40</team1>
+				<team2>55</team2>
+			</game>
+			<game id="755">
+				<gametime>1417804200</gametime>
+				<team1>52</team1>
+				<team2>56</team2>
+			</game>
+			<game id="756">
+				<gametime>1417804200</gametime>
+				<team1>45</team1>
+				<team2>44</team2>
+			</game>
+			<game id="757">
+				<gametime>1417804200</gametime>
+				<team1>46</team1>
+				<team2>54</team2>
+			</game>
+			<game id="758">
+				<gametime>1417804200</gametime>
+				<team1>47</team1>
+				<team2>53</team2>
+			</game>
+			<game id="759">
+				<gametime>1417804200</gametime>
+				<team1>48</team1>
+				<team2>50</team2>
+			</game>
+		</round>
+		<round number="17">
+			<game id="760">
+				<gametime>1418409000</gametime>
+				<team1>49</team1>
+				<team2>52</team2>
+			</game>
+			<game id="761">
+				<gametime>1418409000</gametime>
+				<team1>50</team1>
+				<team2>47</team2>
+			</game>
+			<game id="762">
+				<gametime>1418409000</gametime>
+				<team1>51</team1>
+				<team2>43</team2>
+			</game>
+			<game id="763">
+				<gametime>1418409000</gametime>
+				<team1>44</team1>
+				<team2>48</team2>
+			</game>
+			<game id="764">
+				<gametime>1418409000</gametime>
+				<team1>53</team1>
+				<team2>42</team2>
+			</game>
+			<game id="765">
+				<gametime>1418409000</gametime>
+				<team1>54</team1>
+				<team2>41</team2>
+			</game>
+			<game id="766">
+				<gametime>1418409000</gametime>
+				<team1>55</team1>
+				<team2>45</team2>
+			</game>
+			<game id="767">
+				<gametime>1418409000</gametime>
+				<team1>56</team1>
+				<team2>40</team2>
+			</game>
+			<game id="768">
+				<gametime>1418409000</gametime>
+				<team1>57</team1>
+				<team2>46</team2>
+			</game>
+		</round>
+		<round number="18">
+			<game id="769">
+				<gametime>1418751000</gametime>
+				<team1>49</team1>
+				<team2>40</team2>
+			</game>
+			<game id="770">
+				<gametime>1418751000</gametime>
+				<team1>50</team1>
+				<team2>45</team2>
+			</game>
+			<game id="771">
+				<gametime>1418751000</gametime>
+				<team1>51</team1>
+				<team2>42</team2>
+			</game>
+			<game id="772">
+				<gametime>1418751000</gametime>
+				<team1>52</team1>
+				<team2>43</team2>
+			</game>
+			<game id="773">
+				<gametime>1418751000</gametime>
+				<team1>53</team1>
+				<team2>44</team2>
+			</game>
+			<game id="774">
+				<gametime>1418751000</gametime>
+				<team1>54</team1>
+				<team2>47</team2>
+			</game>
+			<game id="775">
+				<gametime>1418751000</gametime>
+				<team1>55</team1>
+				<team2>48</team2>
+			</game>
+			<game id="776">
+				<gametime>1418751000</gametime>
+				<team1>56</team1>
+				<team2>46</team2>
+			</game>
+			<game id="777">
+				<gametime>1418751000</gametime>
+				<team1>57</team1>
+				<team2>41</team2>
+			</game>
+		</round>
+		<round number="19">
+			<game id="778">
+				<gametime>1419013800</gametime>
+				<team1>41</team1>
+				<team2>50</team2>
+			</game>
+			<game id="779">
+				<gametime>1419013800</gametime>
+				<team1>42</team1>
+				<team2>55</team2>
+			</game>
+			<game id="780">
+				<gametime>1419013800</gametime>
+				<team1>43</team1>
+				<team2>56</team2>
+			</game>
+			<game id="781">
+				<gametime>1419013800</gametime>
+				<team1>40</team1>
+				<team2>52</team2>
+			</game>
+			<game id="782">
+				<gametime>1419013800</gametime>
+				<team1>44</team1>
+				<team2>54</team2>
+			</game>
+			<game id="783">
+				<gametime>1419013800</gametime>
+				<team1>45</team1>
+				<team2>57</team2>
+			</game>
+			<game id="784">
+				<gametime>1419013800</gametime>
+				<team1>46</team1>
+				<team2>49</team2>
+			</game>
+			<game id="785">
+				<gametime>1419013800</gametime>
+				<team1>47</team1>
+				<team2>51</team2>
+			</game>
+			<game id="786">
+				<gametime>1419013800</gametime>
+				<team1>48</team1>
+				<team2>53</team2>
+			</game>
+		</round>
+		<round number="20">
+			<game id="787">
+				<gametime>1423247400</gametime>
+				<team1>49</team1>
+				<team2>42</team2>
+			</game>
+			<game id="788">
+				<gametime>1423247400</gametime>
+				<team1>50</team1>
+				<team2>53</team2>
+			</game>
+			<game id="789">
+				<gametime>1423247400</gametime>
+				<team1>43</team1>
+				<team2>40</team2>
+			</game>
+			<game id="790">
+				<gametime>1423247400</gametime>
+				<team1>51</team1>
+				<team2>46</team2>
+			</game>
+			<game id="791">
+				<gametime>1423247400</gametime>
+				<team1>52</team1>
+				<team2>45</team2>
+			</game>
+			<game id="792">
+				<gametime>1423247400</gametime>
+				<team1>54</team1>
+				<team2>48</team2>
+			</game>
+			<game id="793">
+				<gametime>1423247400</gametime>
+				<team1>55</team1>
+				<team2>44</team2>
+			</game>
+			<game id="794">
+				<gametime>1423247400</gametime>
+				<team1>56</team1>
+				<team2>41</team2>
+			</game>
+			<game id="795">
+				<gametime>1423247400</gametime>
+				<team1>57</team1>
+				<team2>47</team2>
+			</game>
+		</round>
+		<round number="21">
+			<game id="796">
+				<gametime>1423852200</gametime>
+				<team1>41</team1>
+				<team2>52</team2>
+			</game>
+			<game id="797">
+				<gametime>1423852200</gametime>
+				<team1>42</team1>
+				<team2>54</team2>
+			</game>
+			<game id="798">
+				<gametime>1423852200</gametime>
+				<team1>40</team1>
+				<team2>57</team2>
+			</game>
+			<game id="799">
+				<gametime>1423852200</gametime>
+				<team1>44</team1>
+				<team2>50</team2>
+			</game>
+			<game id="800">
+				<gametime>1423852200</gametime>
+				<team1>53</team1>
+				<team2>55</team2>
+			</game>
+			<game id="801">
+				<gametime>1423852200</gametime>
+				<team1>45</team1>
+				<team2>49</team2>
+			</game>
+			<game id="802">
+				<gametime>1423852200</gametime>
+				<team1>46</team1>
+				<team2>43</team2>
+			</game>
+			<game id="803">
+				<gametime>1423852200</gametime>
+				<team1>47</team1>
+				<team2>56</team2>
+			</game>
+			<game id="804">
+				<gametime>1423852200</gametime>
+				<team1>48</team1>
+				<team2>51</team2>
+			</game>
+		</round>
+		<round number="22">
+			<game id="805">
+				<gametime>1424457000</gametime>
+				<team1>49</team1>
+				<team2>47</team2>
+			</game>
+			<game id="806">
+				<gametime>1424457000</gametime>
+				<team1>50</team1>
+				<team2>55</team2>
+			</game>
+			<game id="807">
+				<gametime>1424457000</gametime>
+				<team1>43</team1>
+				<team2>45</team2>
+			</game>
+			<game id="808">
+				<gametime>1424457000</gametime>
+				<team1>40</team1>
+				<team2>41</team2>
+			</game>
+			<game id="809">
+				<gametime>1424457000</gametime>
+				<team1>51</team1>
+				<team2>44</team2>
+			</game>
+			<game id="810">
+				<gametime>1424457000</gametime>
+				<team1>52</team1>
+				<team2>46</team2>
+			</game>
+			<game id="811">
+				<gametime>1424457000</gametime>
+				<team1>54</team1>
+				<team2>53</team2>
+			</game>
+			<game id="812">
+				<gametime>1424457000</gametime>
+				<team1>56</team1>
+				<team2>42</team2>
+			</game>
+			<game id="813">
+				<gametime>1424457000</gametime>
+				<team1>57</team1>
+				<team2>48</team2>
+			</game>
+		</round>
+		<round number="23">
+			<game id="814">
+				<gametime>1425061800</gametime>
+				<team1>41</team1>
+				<team2>43</team2>
+			</game>
+			<game id="815">
+				<gametime>1425061800</gametime>
+				<team1>42</team1>
+				<team2>50</team2>
+			</game>
+			<game id="816">
+				<gametime>1425061800</gametime>
+				<team1>44</team1>
+				<team2>57</team2>
+			</game>
+			<game id="817">
+				<gametime>1425061800</gametime>
+				<team1>53</team1>
+				<team2>51</team2>
+			</game>
+			<game id="818">
+				<gametime>1425061800</gametime>
+				<team1>55</team1>
+				<team2>54</team2>
+			</game>
+			<game id="819">
+				<gametime>1425061800</gametime>
+				<team1>45</team1>
+				<team2>56</team2>
+			</game>
+			<game id="820">
+				<gametime>1425061800</gametime>
+				<team1>46</team1>
+				<team2>40</team2>
+			</game>
+			<game id="821">
+				<gametime>1425061800</gametime>
+				<team1>47</team1>
+				<team2>52</team2>
+			</game>
+			<game id="822">
+				<gametime>1425061800</gametime>
+				<team1>48</team1>
+				<team2>49</team2>
+			</game>
+		</round>
+		<round number="24">
+			<game id="823">
+				<gametime>1425666600</gametime>
+				<team1>41</team1>
+				<team2>46</team2>
+			</game>
+			<game id="824">
+				<gametime>1425666600</gametime>
+				<team1>49</team1>
+				<team2>44</team2>
+			</game>
+			<game id="825">
+				<gametime>1425666600</gametime>
+				<team1>43</team1>
+				<team2>47</team2>
+			</game>
+			<game id="826">
+				<gametime>1425666600</gametime>
+				<team1>40</team1>
+				<team2>45</team2>
+			</game>
+			<game id="827">
+				<gametime>1425666600</gametime>
+				<team1>51</team1>
+				<team2>55</team2>
+			</game>
+			<game id="828">
+				<gametime>1425666600</gametime>
+				<team1>52</team1>
+				<team2>42</team2>
+			</game>
+			<game id="829">
+				<gametime>1425666600</gametime>
+				<team1>54</team1>
+				<team2>50</team2>
+			</game>
+			<game id="830">
+				<gametime>1425666600</gametime>
+				<team1>56</team1>
+				<team2>48</team2>
+			</game>
+			<game id="831">
+				<gametime>1425666600</gametime>
+				<team1>57</team1>
+				<team2>53</team2>
+			</game>
+		</round>
+		<round number="25">
+			<game id="832">
+				<gametime>1426271400</gametime>
+				<team1>50</team1>
+				<team2>51</team2>
+			</game>
+			<game id="833">
+				<gametime>1426271400</gametime>
+				<team1>42</team1>
+				<team2>41</team2>
+			</game>
+			<game id="834">
+				<gametime>1426271400</gametime>
+				<team1>44</team1>
+				<team2>56</team2>
+			</game>
+			<game id="835">
+				<gametime>1426271400</gametime>
+				<team1>53</team1>
+				<team2>43</team2>
+			</game>
+			<game id="836">
+				<gametime>1426271400</gametime>
+				<team1>54</team1>
+				<team2>57</team2>
+			</game>
+			<game id="837">
+				<gametime>1426271400</gametime>
+				<team1>55</team1>
+				<team2>49</team2>
+			</game>
+			<game id="838">
+				<gametime>1426271400</gametime>
+				<team1>45</team1>
+				<team2>46</team2>
+			</game>
+			<game id="839">
+				<gametime>1426271400</gametime>
+				<team1>47</team1>
+				<team2>40</team2>
+			</game>
+			<game id="840">
+				<gametime>1426271400</gametime>
+				<team1>48</team1>
+				<team2>52</team2>
+			</game>
+		</round>
+		<round number="26">
+			<game id="841">
+				<gametime>1426876200</gametime>
+				<team1>41</team1>
+				<team2>45</team2>
+			</game>
+			<game id="842">
+				<gametime>1426876200</gametime>
+				<team1>49</team1>
+				<team2>53</team2>
+			</game>
+			<game id="843">
+				<gametime>1426876200</gametime>
+				<team1>43</team1>
+				<team2>42</team2>
+			</game>
+			<game id="844">
+				<gametime>1426876200</gametime>
+				<team1>40</team1>
+				<team2>48</team2>
+			</game>
+			<game id="845">
+				<gametime>1426876200</gametime>
+				<team1>51</team1>
+				<team2>54</team2>
+			</game>
+			<game id="846">
+				<gametime>1426876200</gametime>
+				<team1>52</team1>
+				<team2>44</team2>
+			</game>
+			<game id="847">
+				<gametime>1426876200</gametime>
+				<team1>56</team1>
+				<team2>55</team2>
+			</game>
+			<game id="848">
+				<gametime>1426876200</gametime>
+				<team1>57</team1>
+				<team2>50</team2>
+			</game>
+			<game id="849">
+				<gametime>1426876200</gametime>
+				<team1>46</team1>
+				<team2>47</team2>
+			</game>
+		</round>
+		<round number="27">
+			<game id="850">
+				<gametime>1428172200</gametime>
+				<team1>50</team1>
+				<team2>49</team2>
+			</game>
+			<game id="851">
+				<gametime>1428172200</gametime>
+				<team1>42</team1>
+				<team2>46</team2>
+			</game>
+			<game id="852">
+				<gametime>1428172200</gametime>
+				<team1>51</team1>
+				<team2>57</team2>
+			</game>
+			<game id="853">
+				<gametime>1428172200</gametime>
+				<team1>44</team1>
+				<team2>40</team2>
+			</game>
+			<game id="854">
+				<gametime>1428172200</gametime>
+				<team1>53</team1>
+				<team2>56</team2>
+			</game>
+			<game id="855">
+				<gametime>1428172200</gametime>
+				<team1>54</team1>
+				<team2>43</team2>
+			</game>
+			<game id="856">
+				<gametime>1428172200</gametime>
+				<team1>55</team1>
+				<team2>52</team2>
+			</game>
+			<game id="857">
+				<gametime>1428172200</gametime>
+				<team1>47</team1>
+				<team2>41</team2>
+			</game>
+			<game id="858">
+				<gametime>1428172200</gametime>
+				<team1>48</team1>
+				<team2>45</team2>
+			</game>
+		</round>
+		<round number="28">
+			<game id="859">
+				<gametime>1428690600</gametime>
+				<team1>41</team1>
+				<team2>48</team2>
+			</game>
+			<game id="860">
+				<gametime>1428690600</gametime>
+				<team1>49</team1>
+				<team2>51</team2>
+			</game>
+			<game id="861">
+				<gametime>1428690600</gametime>
+				<team1>43</team1>
+				<team2>44</team2>
+			</game>
+			<game id="862">
+				<gametime>1428690600</gametime>
+				<team1>40</team1>
+				<team2>42</team2>
+			</game>
+			<game id="863">
+				<gametime>1428690600</gametime>
+				<team1>52</team1>
+				<team2>54</team2>
+			</game>
+			<game id="864">
+				<gametime>1428690600</gametime>
+				<team1>56</team1>
+				<team2>50</team2>
+			</game>
+			<game id="865">
+				<gametime>1428690600</gametime>
+				<team1>57</team1>
+				<team2>55</team2>
+			</game>
+			<game id="866">
+				<gametime>1428690600</gametime>
+				<team1>45</team1>
+				<team2>47</team2>
+			</game>
+			<game id="867">
+				<gametime>1428690600</gametime>
+				<team1>46</team1>
+				<team2>53</team2>
+			</game>
+		</round>
+		<round number="29">
+			<game id="868">
+				<gametime>1429295400</gametime>
+				<team1>50</team1>
+				<team2>52</team2>
+			</game>
+			<game id="869">
+				<gametime>1429295400</gametime>
+				<team1>42</team1>
+				<team2>47</team2>
+			</game>
+			<game id="870">
+				<gametime>1429295400</gametime>
+				<team1>51</team1>
+				<team2>45</team2>
+			</game>
+			<game id="871">
+				<gametime>1429295400</gametime>
+				<team1>44</team1>
+				<team2>41</team2>
+			</game>
+			<game id="872">
+				<gametime>1429295400</gametime>
+				<team1>53</team1>
+				<team2>40</team2>
+			</game>
+			<game id="873">
+				<gametime>1429295400</gametime>
+				<team1>54</team1>
+				<team2>49</team2>
+			</game>
+			<game id="874">
+				<gametime>1429295400</gametime>
+				<team1>55</team1>
+				<team2>43</team2>
+			</game>
+			<game id="875">
+				<gametime>1429295400</gametime>
+				<team1>57</team1>
+				<team2>56</team2>
+			</game>
+			<game id="876">
+				<gametime>1429295400</gametime>
+				<team1>48</team1>
+				<team2>46</team2>
+			</game>
+		</round>
+		<round number="30">
+			<game id="877">
+				<gametime>1429900200</gametime>
+				<team1>41</team1>
+				<team2>55</team2>
+			</game>
+			<game id="878">
+				<gametime>1429900200</gametime>
+				<team1>49</team1>
+				<team2>57</team2>
+			</game>
+			<game id="879">
+				<gametime>1429900200</gametime>
+				<team1>43</team1>
+				<team2>50</team2>
+			</game>
+			<game id="880">
+				<gametime>1429900200</gametime>
+				<team1>40</team1>
+				<team2>51</team2>
+			</game>
+			<game id="881">
+				<gametime>1429900200</gametime>
+				<team1>52</team1>
+				<team2>53</team2>
+			</game>
+			<game id="882">
+				<gametime>1429900200</gametime>
+				<team1>56</team1>
+				<team2>54</team2>
+			</game>
+			<game id="883">
+				<gametime>1429900200</gametime>
+				<team1>45</team1>
+				<team2>42</team2>
+			</game>
+			<game id="884">
+				<gametime>1429900200</gametime>
+				<team1>46</team1>
+				<team2>44</team2>
+			</game>
+			<game id="885">
+				<gametime>1429900200</gametime>
+				<team1>47</team1>
+				<team2>48</team2>
+			</game>
+		</round>
+		<round number="31">
+			<game id="886">
+				<gametime>1430591400</gametime>
+				<team1>49</team1>
+				<team2>56</team2>
+			</game>
+			<game id="887">
+				<gametime>1430591400</gametime>
+				<team1>50</team1>
+				<team2>40</team2>
+			</game>
+			<game id="888">
+				<gametime>1430591400</gametime>
+				<team1>51</team1>
+				<team2>52</team2>
+			</game>
+			<game id="889">
+				<gametime>1430591400</gametime>
+				<team1>44</team1>
+				<team2>47</team2>
+			</game>
+			<game id="890">
+				<gametime>1430591400</gametime>
+				<team1>53</team1>
+				<team2>41</team2>
+			</game>
+			<game id="891">
+				<gametime>1430591400</gametime>
+				<team1>54</team1>
+				<team2>45</team2>
+			</game>
+			<game id="892">
+				<gametime>1430591400</gametime>
+				<team1>55</team1>
+				<team2>46</team2>
+			</game>
+			<game id="893">
+				<gametime>1430591400</gametime>
+				<team1>57</team1>
+				<team2>43</team2>
+			</game>
+			<game id="894">
+				<gametime>1430591400</gametime>
+				<team1>48</team1>
+				<team2>42</team2>
+			</game>
+		</round>
+		<round number="32">
+			<game id="895">
+				<gametime>1431109800</gametime>
+				<team1>41</team1>
+				<team2>49</team2>
+			</game>
+			<game id="896">
+				<gametime>1431109800</gametime>
+				<team1>42</team1>
+				<team2>44</team2>
+			</game>
+			<game id="897">
+				<gametime>1431109800</gametime>
+				<team1>43</team1>
+				<team2>48</team2>
+			</game>
+			<game id="898">
+				<gametime>1431109800</gametime>
+				<team1>40</team1>
+				<team2>54</team2>
+			</game>
+			<game id="899">
+				<gametime>1431109800</gametime>
+				<team1>52</team1>
+				<team2>57</team2>
+			</game>
+			<game id="900">
+				<gametime>1431109800</gametime>
+				<team1>56</team1>
+				<team2>51</team2>
+			</game>
+			<game id="901">
+				<gametime>1431109800</gametime>
+				<team1>45</team1>
+				<team2>53</team2>
+			</game>
+			<game id="902">
+				<gametime>1431109800</gametime>
+				<team1>46</team1>
+				<team2>50</team2>
+			</game>
+			<game id="903">
+				<gametime>1431109800</gametime>
+				<team1>47</team1>
+				<team2>55</team2>
+			</game>
+		</round>
+		<round number="33">
+			<game id="904">
+				<gametime>1431876600</gametime>
+				<team1>49</team1>
+				<team2>43</team2>
+			</game>
+			<game id="905">
+				<gametime>1431876600</gametime>
+				<team1>50</team1>
+				<team2>48</team2>
+			</game>
+			<game id="906">
+				<gametime>1431876600</gametime>
+				<team1>51</team1>
+				<team2>41</team2>
+			</game>
+			<game id="907">
+				<gametime>1431876600</gametime>
+				<team1>44</team1>
+				<team2>45</team2>
+			</game>
+			<game id="908">
+				<gametime>1431876600</gametime>
+				<team1>53</team1>
+				<team2>47</team2>
+			</game>
+			<game id="909">
+				<gametime>1431876600</gametime>
+				<team1>54</team1>
+				<team2>46</team2>
+			</game>
+			<game id="910">
+				<gametime>1431876600</gametime>
+				<team1>55</team1>
+				<team2>40</team2>
+			</game>
+			<game id="911">
+				<gametime>1431876600</gametime>
+				<team1>56</team1>
+				<team2>52</team2>
+			</game>
+			<game id="912">
+				<gametime>1431876600</gametime>
+				<team1>57</team1>
+				<team2>42</team2>
+			</game>
+		</round>
+		<round number="34">
+			<game id="913">
+				<gametime>1432481400</gametime>
+				<team1>41</team1>
+				<team2>54</team2>
+			</game>
+			<game id="914">
+				<gametime>1432481400</gametime>
+				<team1>42</team1>
+				<team2>53</team2>
+			</game>
+			<game id="915">
+				<gametime>1432481400</gametime>
+				<team1>43</team1>
+				<team2>51</team2>
+			</game>
+			<game id="916">
+				<gametime>1432481400</gametime>
+				<team1>40</team1>
+				<team2>56</team2>
+			</game>
+			<game id="917">
+				<gametime>1432481400</gametime>
+				<team1>52</team1>
+				<team2>49</team2>
+			</game>
+			<game id="918">
+				<gametime>1432481400</gametime>
+				<team1>45</team1>
+				<team2>55</team2>
+			</game>
+			<game id="919">
+				<gametime>1432481400</gametime>
+				<team1>46</team1>
+				<team2>57</team2>
+			</game>
+			<game id="920">
+				<gametime>1432481400</gametime>
+				<team1>47</team1>
+				<team2>50</team2>
+			</game>
+			<game id="921">
+				<gametime>1432481400</gametime>
+				<team1>48</team1>
+				<team2>44</team2>
+			</game>
+		</round>
+	</games>
+</competition>

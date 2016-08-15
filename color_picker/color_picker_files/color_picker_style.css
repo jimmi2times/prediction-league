@@ -1,0 +1,80 @@
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The NoGray Web Applications are released under the GNU General Public License;
+however, you cannot modify the credits on top of each file nor remove them. 
+
+If you would like to use the NoGray Web Applications in any commercial product,
+you must get a written permission from the NoGray first. Failure to do so
+can result in legal actions. 
+
+For more details about the GNU General Public License, please go to
+http://www.gnu.org/copyleft/gpl.html
+
+Note: YOU CANNOT SELL THIS LIBRARY FOR ANY REASON EITHER AS STAND ALONE PRODUCT
+	OR AS A PART OF ANOTHER PACKAGE WITHOUR A WRITTEN PERMISSION FROM THE NOGRAY
+	
+Some files may contain a link to the NoGray.com, we ask you not to remove the links
+to help spread the word of our products.
+	
+This file is designed and written by: Wesam Saif
+Contact: admin@nogray.com
+Support: support@nogray.com
+URL: http://www.nogray.com
+Support URL: http://www.nogray.com/phpbb/
+
+For customization and advance editing, please contact us at sales@nogray.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+body {background-color:#ece9d8;
+	margin:15px;
+	padding:0px;}
+
+* {font-family:Arial, Helvetica, sans-serif;
+	font-size:8pt;}
+	
+#np_cp {width:435px;}
+	
+.ng_cp_main_table {text-align:left;}
+
+#ng_cp_hue_color_area {width:256px;
+	height:256px;
+	border:inset #ece9d8 2px;
+	background:#ff0000 url(images/mask.png) no-repeat top left;
+	_background:#ff0000;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/mask.png', sizingMethod = 'scale');}
+	
+#ng_cp_spectrum_slider{width:50px;
+	height:256px;
+	text-align:center;
+	z-index:10;}
+	
+.ng_cp_spectrum_img {border:inset #ece9d8 2px;
+	height:256px;}
+	
+#ng_cp_spectrum_arrows {position:absolute;
+	top:auto;
+	left:auto;}
+	
+#ng_cp_circle {position:absolute;
+	top:auto;
+	left:auto;}
+	
+.ng_cp_side_info {margin:15px;
+	margin-left:5px;}
+
+.ng_cp_color_preview {width:90px;
+	height:50px;
+	border:solid #000000 1px;
+	margin-bottom:10px;}
+
+.ng_cp_preview_channel {height:25px;
+	background-color:#ff0000;}
+	
+.ng_cp_button {width:50px;
+	text-align:center;}
+	
+#Error {font-weight:bold;
+	color:#cc0000;}
+

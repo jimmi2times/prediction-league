@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Color Picker</title>
+<script language="javascript">
+	var which_input;
+
+	// The function name fillColorValue must be used
+	// to get the color value. This function takes a string
+	// as the color value in a hexidacimal format (e.g. FFFFFF)
+	// the function code can be anything the application need.
+	function fillColorValue(color){
+		document.getElementById(which_input).value = color;
+		document.getElementById(which_input+"_div").style.backgroundColor = "#"+color;
+	}
+	
+	function show_picker(ID, Current_Color, Previous_Color){
+		which_input = ID;
+		var lnk = "color_picker_files/color_picker_interface.html?cur_color="+Current_Color+"&pre_color="+Previous_Color;
+		window.open(lnk, "", "width=465, height=350");
+	}
+</script>
+<style>
+	* {font-family:Arial, Helvetica, sans-serif;
+		font-size:9pt;}
+	.sample_swatch {float:left;
+		width:25px;
+		height:25px;
+		cursor:pointer;}
+
+</style>
+</head>
+<body>
+<b>Default Color Value (Red)</b><br />
+<div id="Color1_div" class="sample_swatch" style="background:#ff0000;" onclick="show_picker('Color1', '', '');">&nbsp;</div>
+<input type="text" size="6" value="FF0000" id="Color1" onclick="show_picker(this.id, '', '');" />
+<br /><br /><br />
+
+<b>Start With Blue</b><br />
+<div id="Color2_div" class="sample_swatch" style="background:#0000ff;" onclick="show_picker('Color2', '0000FF', '');">&nbsp;</div>
+<input type="text" size="6" value="0000FF" id="Color2" onclick="show_picker(this.id, '0000FF', '');" />
+<br /><br /><br />
+
+<b>Start With Green and Previous Color Yellow</b><br />
+<div id="Color3_div" class="sample_swatch" style="background:#00ff00;" onclick="show_picker('Color3', '00FF00', 'FFFF00');">&nbsp;</div>
+<input type="text" size="6" value="00FF00" id="Color3" onclick="show_picker(this.id, '00FF00', 'FFFF00');" />
+<br /><br /><br />
+</body>
+</html>

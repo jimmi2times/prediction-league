@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Color Picker</title>
+<script language="javascript" src="nogray_lib/base.js" type="text/javascript"></script>
+<script language="javascript" src="nogray_lib/types.js" type="text/javascript"></script>
+<script language="javascript" src="nogray_lib/color.js" type="text/javascript"></script>
+<script language="javascript" src="nogray_lib/drag_and_drop.js" type="text/javascript"></script>
+<script language="javascript" defer src="nogray_lib/IE_loader.js" type="text/javascript"></script>
+<script language="javascript" src="color_picker_script.js" type="text/javascript"></script>
+<link href="color_picker_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="ini_picker();">
+<div id="np_cp">
+<table cellpadding="0" cellspacing="0" class="ng_cp_main_table">
+<tr><td>
+Select a Color:
+<div id="gradient_colors">
+<img src="images/circle.gif" border="0" alt="" id="ng_cp_circle" />
+<div id="ng_cp_hue_color_area"> </div>
+</div>
+</td><td>
+&nbsp;
+<div id="ng_cp_spectrum_slider">
+<img src="images/side_slider.jpg" border="0" alt="" class="ng_cp_spectrum_img" id="ng_cp_spectrum_img" /></div>
+<img src="images/arrows.gif" border="0" alt="" id="ng_cp_spectrum_arrows" />
+
+</td><td>
+<div class="ng_cp_side_info">
+	<div class="ng_cp_color_preview">
+		<div class="ng_cp_preview_channel" id="ng_cp_current_preview"> </div>
+		<div class="ng_cp_preview_channel" id="ng_cp_previous_preview"> </div>
+	</div>
+	<table>
+	<tr><td>H:</td>
+	<td><input type="text" name="ng_cp_h_selector_val" id="ng_cp_h_selector_val" size="2" value="0" maxlength="3"/> &deg;</td></tr>
+	
+	<tr><td>S:</td>
+	<td><input type="text" name="ng_cp_s_selector_val" id="ng_cp_s_selector_val" size="2" value="100" maxlength="3" /> %</td></tr>
+	
+	<tr><td>B:</td>
+	<td><input type="text" name="ng_cp_l_selector_val" id="ng_cp_l_selector_val" size="2" value="100" maxlength="3" /> %</td></tr>
+	
+	<tr><td>R:</td>
+	<td><input type="text" name="ng_cp_r_selector_val" id="ng_cp_r_selector_val" size="2" value="255" maxlength="3" /></td></tr>
+	
+	<tr><td>G:</td>
+	<td><input type="text" name="ng_cp_g_selector_val" id="ng_cp_g_selector_val" size="2" value="0" maxlength="3" /></td></tr>
+	
+	<tr><td>B:</td>
+	<td><input type="text" name="ng_cp_b_selector_val" id="ng_cp_b_selector_val" size="2" value="0" maxlength="3" /></td></tr>
+	
+	<tr><td>#</td>
+	<td><input type="text" name="ng_cp_hex_val" id="ng_cp_hex_val" size="6" value="FF0000" maxlength="6" /></td></tr>
+	</table>
+</div>
+</td></tr>
+<tr><td>
+<input type="checkbox" name="ng_cp_websafe_check" id="ng_cp_websafe_check" /> <label for="ng_cp_websafe_check" id="ng_cp_websafe_txt">Only Websafe Colors</label>
+<input type="checkbox" name="ng_cp_des_check" id="ng_cp_des_check" /> <label for="ng_cp_des_check" id="ng_cp_des_txt">Desaturate</label>
+<br />
+<input type="checkbox" name="ng_cp_invert_check" id="ng_cp_invert_check" /> <label for="ng_cp_invert_check" id="ng_cp_invert_txt">Invert Color</label>
+</td><td colspan="2" align="right">
+<input type="button" value="OK" id="ok_button" class="ng_cp_button" />
+&nbsp;
+<input type="button" value="Cancel" id="cancel_button" class="ng_cp_button" />
+<br /><br />
+<a href="http://www.nogray.com" target="_blank" style="font-family:Tahoma, Arial; font-size:8pt; text-decoration:none; color:#666666;">Provided by NoGray.com</a>
+</td></tr>
+</table>
+</div>
+</body>
+</html>
