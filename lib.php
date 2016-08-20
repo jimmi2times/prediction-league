@@ -349,17 +349,17 @@ if (!empty($results)){
 	$lastround = pl_calculate_lastround($competition['id']) - 1;
 
 
-	echo '<div class="pl_headline">';
-		echo Results.' '.$roundname;
-	echo '</div>';
+	$html .=  '<div class="pl_headline">';
+		$html .=  Results.' '.$roundname;
+	$html .=  '</div>';
 
-	echo '<table class="pl_tipp" cellspacing=1 cellpadding = 1>';
+	$html .=  '<table class="pl_tipp" cellspacing=1 cellpadding = 1>';
 
-	echo '<tr class="tiprow">';
-		echo '<th class="tipcolumnone">'.Place.'</th>';
-		echo '<th class="tipcolumntwo">'.UserName.'</th>';
-		echo '<th class="tipcolumnthree">'.Points.'</th>';
-	echo '</tr>';
+	$html .=  '<tr class="tiprow">';
+		$html .=  '<th class="tipcolumnone">'.Place.'</th>';
+		$html .=  '<th class="tipcolumntwo">'.UserName.'</th>';
+		$html .=  '<th class="tipcolumnthree">'.Points.'</th>';
+	$html .=  '</tr>';
 
 	foreach ($results as $user){
 		/* To manage even scores of the users */
@@ -375,14 +375,15 @@ if (!empty($results)){
 				$lastposition_string = '('.$lastposition.'.)';
 				$picture = pl_get_updown_picture($position, $lastposition);
 				}
-		echo '<tr class="tiprow">';
-			echo '<td class="tipcolumnone">'.$picture.' '.$position.'. '.$lastposition_string.'</td>';
-			echo '<td class="tipcolumntwo">'.$user['display_name'].'</td>';
-			echo '<td class="tipcolumnthree">'.$user['points'].'</td>';
-		echo '</tr>';
+		$html .=  '<tr class="tiprow">';
+			$html .=  '<td class="tipcolumnone">'.$picture.' '.$position.'. '.$lastposition_string.'</td>';
+			$html .=  '<td class="tipcolumntwo">'.$user['display_name'].'</td>';
+			$html .=  '<td class="tipcolumnthree">'.$user['points'].'</td>';
+		$html .=  '</tr>';
 		}
-	echo '</table>';
+	$html .=  '</table>';
 	}
+	return $html;
 }
 
 
@@ -404,21 +405,21 @@ else {$roundname = pl_get_round_name($round, $competition['round_names']);}
 if(!empty($games))
 	{
 	// defines the form
-	echo '<form action = "?page_id='.$page_id.'&amp;view=tipgames&amp;action=sendtips&amp;round='.$round.'&amp;competition_id='.$competition['id'].'#menutip" method="POST">';
+	$html .=  '<form action = "?page_id='.$page_id.'&amp;view=tipgames&amp;action=sendtips&amp;round='.$round.'&amp;competition_id='.$competition['id'].'#menutip" method="POST">';
 
-	echo '<div class="pl_headline">';
-		echo Tips.' '.$roundname;
-	echo '</div>';
+	$html .=  '<div class="pl_headline">';
+		$html .=  Tips.' '.$roundname;
+	$html .=  '</div>';
 
-	echo '<table class="tip" cellspacing= 1 cellpadding = 1>';
+	$html .=  '<table class="tip" cellspacing= 1 cellpadding = 1>';
 
-	echo '<tr class="tiprow">';
-		echo '<th width="10%" class="tipcolumnone">'.Gametime.'</th>';
-		echo '<th width="40%" class="tipcolumntwo">'.Game.'</th>';
-		echo '<th width="22%" class="tipcolumnthree">'.YourTip.'</th>';
-		echo '<th width="15%" class="tipcolumnfour">'.Result.'</th>';
-		echo '<th width="13%" class="tipcolumnfive">'.YourPoints.'</th>';
-	echo '</tr>';
+	$html .=  '<tr class="tiprow">';
+		$html .=  '<th width="10%" class="tipcolumnone">'.Gametime.'</th>';
+		$html .=  '<th width="40%" class="tipcolumntwo">'.Game.'</th>';
+		$html .=  '<th width="22%" class="tipcolumnthree">'.YourTip.'</th>';
+		$html .=  '<th width="15%" class="tipcolumnfour">'.Result.'</th>';
+		$html .=  '<th width="13%" class="tipcolumnfive">'.YourPoints.'</th>';
+	$html .=  '</tr>';
 	$numberofgames = 0; // count the games
 		foreach ($games as $game) {
 		$numberofgames = $numberofgames + 1; // count the games
@@ -427,68 +428,69 @@ if(!empty($games))
 		$date = date("d.m.y",$game['gametime']);
 		$time = date("G:i",$game['gametime']);
 		$recent_user_tips = pl_get_recent_user_tips($game['id'], $user_ID);
-		echo '<tr class="tiprow">';
+		$html .=  '<tr class="tiprow">';
 			// Column One --> Date and Time
-			echo '<td class="tipcolumnone">';
-				echo $date.'<br/>'.$time;
-			echo '</td>';
+			$html .=  '<td class="tipcolumnone">';
+				$html .=  $date.'<br/>'.$time;
+			$html .=  '</td>';
 			// Column Two --> Game
-			echo '<td class="tipcolumntwo">';
+			$html .=  '<td class="tipcolumntwo">';
 				$picture1 = pl_get_team_picture($team1['team_shortname']);
 				$picture2 = pl_get_team_picture($team2['team_shortname']);
-				echo $picture1.' '.$team1['team_name'].'<br/>'.$picture2.' '.$team2['team_name'];
-			echo '</td>';
+				$html .=  $picture1.' '.$team1['team_name'].'<br/>'.$picture2.' '.$team2['team_name'];
+			$html .=  '</td>';
 			// Column Three --> Tips
-			echo '<td class="tipcolumnthree">';
+			$html .=  '<td class="tipcolumnthree">';
 				if (($timestamp + ($competition['tiptime'] * 60) + (get_option('gmt_offset') * 3600)) < $game['gametime']){
-					echo '<input class = "tipinput" type="tel" name="team1-'.$numberofgames.'" size=2 maxlength=3 value="'.$recent_user_tips['team1tip'].'">';
-					echo ' : ';
-					echo '<input class = "tipinput" type="tel" name="team2-'.$numberofgames.'" size=2 maxlength=3 value="'.$recent_user_tips['team2tip'].'">';
+					$html .=  '<input class = "tipinput" type="tel" name="team1-'.$numberofgames.'" size=2 maxlength=3 value="'.$recent_user_tips['team1tip'].'">';
+					$html .=  ' : ';
+					$html .=  '<input class = "tipinput" type="tel" name="team2-'.$numberofgames.'" size=2 maxlength=3 value="'.$recent_user_tips['team2tip'].'">';
 					// Sends the GameID
-					echo '<input type="hidden" name="game'.$numberofgames.'" value="'.$game['id'].'">';
+					$html .=  '<input type="hidden" name="game'.$numberofgames.'" value="'.$game['id'].'">';
 					}
 				else {
 					if ($recent_user_tips){
-						echo $recent_user_tips['team1tip'].' : '.$recent_user_tips['team2tip'];}
-					else {echo NoTips;}
+						$html .=  $recent_user_tips['team1tip'].' : '.$recent_user_tips['team2tip'];}
+					else {$html .=  NoTips;}
 					// Sends the GameID
-					echo '<input type="hidden" name="game'.$numberofgames.'" value="'.$game['id'].'">';
+					$html .=  '<input type="hidden" name="game'.$numberofgames.'" value="'.$game['id'].'">';
 					}
-			echo '</td>';
+			$html .=  '</td>';
 			// Column Four --> Results
-			echo '<td class="tipcolumnfour">';
+			$html .=  '<td class="tipcolumnfour">';
 				if ($game['team1_score'] != NULL AND $game['team2_score'] != NULL){
-					echo $game['team1_score'].' : '.$game['team2_score'];}
-				else {echo '---';}
-			echo '</td>';
+					$html .=  $game['team1_score'].' : '.$game['team2_score'];}
+				else {$html .=  '---';}
+			$html .=  '</td>';
 			// Column Five --> Points
-			echo '<td class="tipcolumnfive">';
+			$html .=  '<td class="tipcolumnfive">';
 				$points = pl_get_score($recent_user_tips['id']);
 				if ($points['points'] != NULL){
-					echo $points['points'];}
-				else {echo '---';}
-			echo '</td>';
+					$html .=  $points['points'];}
+				else {$html .=  '---';}
+			$html .=  '</td>';
 
 
-		echo '</tr>';
+		$html .=  '</tr>';
 		}
 
 	// sends the number of games
-		echo '<tr>';
-			echo '<th class="tipcolumnone" colspan="3">';
-				echo '<input type="hidden" name="numberofgames" value="'.$numberofgames.'">';
-				echo '<input type="submit" class="tipsubmit" value="'.TipSubmit.'">';
-			echo '</th>';
-			echo '<th class="tipcolumnfour" colspan="2">';
-				echo '<b>'.PointsThisRound.': '.$results['points'];
-			echo '</th>';
-		echo '</tr>';
+		$html .=  '<tr>';
+			$html .=  '<th class="tipcolumnone" colspan="3">';
+				$html .=  '<input type="hidden" name="numberofgames" value="'.$numberofgames.'">';
+				$html .=  '<input type="submit" class="tipsubmit" value="'.TipSubmit.'">';
+			$html .=  '</th>';
+			$html .=  '<th class="tipcolumnfour" colspan="2">';
+				$html .=  '<b>'.PointsThisRound.': '.$results['points'];
+			$html .=  '</th>';
+		$html .=  '</tr>';
 
-	echo '</table>';
+	$html .=  '</table>';
 	}
 if (!$games){
-	echo '<h3>'.NoGamesYet.'</h3>';
+	$html .=  '<h3>'.NoGamesYet.'</h3>';
 	}
+	return $html;
 }
 
 /*
@@ -505,27 +507,27 @@ global $wpdb, $user_ID, $page_id;
 			}
 		}
 	if($games){
-		echo '<table class="tip" cellspacing= 1 cellpadding = 1>';
-		echo '<tr class="tiprow">';
-		echo '<th class="tipcolumnone">'.UserName.'</th>';
+		$html .=  '<table class="tip" cellspacing= 1 cellpadding = 1>';
+		$html .=  '<tr class="tiprow">';
+		$html .=  '<th class="tipcolumnone">'.UserName.'</th>';
 		foreach ($games as $game){
 
-			echo '<th class="tipcolumnone">';
+			$html .=  '<th class="tipcolumnone">';
 
 			if (isset($team[$game['team1']]['team_shortname'])){
-				echo $team[$game['team1']]['team_shortname'].'<br/>';
-				echo $team[$game['team2']]['team_shortname'].'<br/>';
+				$html .=  $team[$game['team1']]['team_shortname'].'<br/>';
+				$html .=  $team[$game['team2']]['team_shortname'].'<br/>';
 				if ($game['team1_score'] != NULL){
-					echo $game['team1_score'].':'.$game['team2_score'];
+					$html .=  $game['team1_score'].':'.$game['team2_score'];
 				}
 			}
 			else {
-				echo 'n.n.<br/>n.n.';
+				$html .=  'n.n.<br/>n.n.';
 				}
-			echo '</th>';
+			$html .=  '</th>';
 		}
-		echo '<th class="tipcolumnone">'.Points.'</th>';
-		echo '</tr>';
+		$html .=  '<th class="tipcolumnone">'.Points.'</th>';
+		$html .=  '</tr>';
 
 		$sql = 	'SELECT u.ID, u.display_name, r.user_id, r.points, r.round, r.competition_id '.
 				' FROM '.$wpdb->prefix.'pl_results r, '.$wpdb->prefix.'users u '.
@@ -536,15 +538,15 @@ global $wpdb, $user_ID, $page_id;
 		$users = $wpdb->get_results($wpdb->prepare($sql, $round, $competition['id']),ARRAY_A);
 		if ($users){
 			foreach($users as $user){
-				echo '<tr class="tiprow">';
-				echo '<td class="tipcolumnone">';
-				echo $user['display_name'];
-				echo '</td>';
+				$html .=  '<tr class="tiprow">';
+				$html .=  '<td class="tipcolumnone">';
+				$html .=  $user['display_name'];
+				$html .=  '</td>';
 				$results = pl_get_results_user($competition['id'], $round, $user['ID']);
 				foreach($games as $game){
 					$recent_user_tips='';
 					$recent_user_tips = pl_get_recent_user_tips($game['id'], $user['ID']);
-					echo '<td class="tipcolumnone">';
+					$html .=  '<td class="tipcolumnone">';
 					if ($recent_user_tips){
 						$points = pl_get_score($recent_user_tips['id']);
 						/* don't show the usertips before the game is over */
@@ -554,22 +556,23 @@ global $wpdb, $user_ID, $page_id;
 							elseif ($points['points'] == $competition['points_three']){$style='font-weight: bold;';}
 							elseif ($points['points'] == $competition['points_four']){$style='font-weight: bold;';}
 							else {$style='font-weight: normal;';}
-							echo '<font style="'.$style.'">'.$recent_user_tips['team1tip'].':'.$recent_user_tips['team2tip'].'</font>';
-							echo ' <font style="font-size:70%;'.$style.'">'.$points['points'].'</font>';										}
+							$html .=  '<font style="'.$style.'">'.$recent_user_tips['team1tip'].':'.$recent_user_tips['team2tip'].'</font>';
+							$html .=  ' <font style="font-size:70%;'.$style.'">'.$points['points'].'</font>';										}
 						else {
-							echo '?';
+							$html .=  '?';
 							}
 						}
-					echo '</td>';
+					$html .=  '</td>';
 					}
-				echo '<td class="tipcolumnone">';
-				echo $results['points'];
-				echo '</td>';
-				echo '</tr>';
+				$html .=  '<td class="tipcolumnone">';
+				$html .=  $results['points'];
+				$html .=  '</td>';
+				$html .=  '</tr>';
 				}
 			}
-		echo '</table>';
+		$html .=  '</table>';
 	}
+	return $html;
 }
 
 
@@ -654,35 +657,36 @@ else {
  */
 function pl_print_top_menu_tip($number_of_competitions, $view, $round, $competition_id){
 	global $page_id, $user_ID, $wp_version;
-	echo '<a name="menutip"></a>';
-	echo '<div>';
-		echo '<ul class = "pl_menu">';
+	$html =  '<a name="menutip"></a>';
+	$html .=  '<div>';
+		$html .=  '<ul class = "pl_menu">';
 			if ($number_of_competitions > 1){pl_print_competition_menu($view, $round, $competition_id);}
-			pl_print_navigation($view, $round, $competition_id);
+			$html .= pl_print_navigation($view, $round, $competition_id);
 			if ($view=="tipgames" OR $view=="overview"){
-				pl_print_rounds_menu($view, $round, $competition_id);
+				$html .= pl_print_rounds_menu($view, $round, $competition_id);
 				}
 			if ($view=="results"){
-				pl_print_rounds_menu($view, $round, $competition_id, 1);
+				$html .= pl_print_rounds_menu($view, $round, $competition_id, 1);
 				}
 		/* if the user is logged in. print the logout link */
 		if ($user_ID){
 			/* function wp_logout_url since wordpress 2.7 */
 			if ($wp_version >= 2.7){
-				echo '<li><a href="'.wp_logout_url(get_permalink()).'&amp;redirect_to=index.php?page_id='.$page_id.'">'.Logout.'</a></li>';
+				$html .=  '<li><a href="'.wp_logout_url(get_permalink()).'&amp;redirect_to=index.php?page_id='.$page_id.'">'.Logout.'</a></li>';
 			}
 			else {
-				echo '<li><a href="'.get_option('home').'/wp-login.php?action=logout&amp;redirect_to=index.php?page_id='.$page_id.'">'.Logout.'</a></li>';
+				$html .=  '<li><a href="'.get_option('home').'/wp-login.php?action=logout&amp;redirect_to=index.php?page_id='.$page_id.'">'.Logout.'</a></li>';
 			}
 		}
 		/* if the user is not logged in print the register and the login link */
 		if (!$user_ID){
-			echo '<li><a href="'.get_option('home').'/wp-login.php?action=register&amp;redirect_to=index.php?page_id='.$page_id.'">'.Register.'</a></li>';
-			echo '<li><a href="'.get_option('home').'/wp-login.php?redirect_to=index.php?page_id='.$page_id.'">'.Login.'</a></li>';
+			$html .=  '<li><a href="'.get_option('home').'/wp-login.php?action=register&amp;redirect_to=index.php?page_id='.$page_id.'">'.Register.'</a></li>';
+			$html .=  '<li><a href="'.get_option('home').'/wp-login.php?redirect_to=index.php?page_id='.$page_id.'">'.Login.'</a></li>';
 		}
-		echo '</ul>';
-	echo '</div>';
-	echo '<div class="clear"></div>';
+		$html .=  '</ul>';
+	$html .=  '</div>';
+	$html .=  '<div class="clear"></div>';
+	return $html;
 }
 
 /**
@@ -699,11 +703,11 @@ function pl_print_navigation($view, $round, $competition_id){
 	else {$roundresults = $round;}
 
 		if ($user_ID){
-			echo '<li><a class="'.$class['tipgames'].'" href="?page_id='.$page_id.'&amp;view=tipgames&amp;round='.$round.'&amp;competition_id='.$competition_id.'#menutip">'.Tip.'</a></li>';
+			$html .=  '<li><a class="'.$class['tipgames'].'" href="?page_id='.$page_id.'&amp;view=tipgames&amp;round='.$round.'&amp;competition_id='.$competition_id.'#menutip">'.Tip.'</a></li>';
 		}
-		echo '<li><a class="'.$class['results'].'" href="?page_id='.$page_id.'&amp;view=results&amp;round='.$roundresults.'&amp;competition_id='.$competition_id.'#menutip">'.Results.'</a></li>';
-		echo '<li><a class="'.$class['overview'].'" href="?page_id='.$page_id.'&amp;view=overview&amp;round='.$round.'&amp;competition_id='.$competition_id.'#menutip">'.Overview.'</a></li>';
-
+		$html .=  '<li><a class="'.$class['results'].'" href="?page_id='.$page_id.'&amp;view=results&amp;round='.$roundresults.'&amp;competition_id='.$competition_id.'#menutip">'.Results.'</a></li>';
+		$html .=  '<li><a class="'.$class['overview'].'" href="?page_id='.$page_id.'&amp;view=overview&amp;round='.$round.'&amp;competition_id='.$competition_id.'#menutip">'.Overview.'</a></li>';
+	return $html;
 }
 
 /**
@@ -712,23 +716,24 @@ function pl_print_navigation($view, $round, $competition_id){
 function pl_print_competition_menu($view, $round, $competition_id) {
 	global $user_ID, $pl_options;
 	$page_id = $pl_options['page_id'];
-	echo '<li><a href="#">';
+	$html .=  '<li><a href="#">';
 	$competitions = pl_get_all_competitions();
 	if ($competitions){
 		foreach($competitions as $competition){
 			$class = '';
 			if ($competition_id == $competition['id']){
-				echo $competition['name'];
+				$html .=  $competition['name'];
 			}
 		}
-		echo '</a><ul>';
+		$html .=  '</a><ul>';
 		foreach($competitions as $competition){
 			$class = '';
-			echo '<li class="roundmenu'.$class.'"><a href="?page_id='.$page_id.'&amp;view='.$view.'&amp;round='.$round.'&amp;competition_id='.$competition['id'].'#menutip">'.$competition['name'].' </a></li>';
+			$html .=  '<li class="roundmenu'.$class.'"><a href="?page_id='.$page_id.'&amp;view='.$view.'&amp;round='.$round.'&amp;competition_id='.$competition['id'].'#menutip">'.$competition['name'].' </a></li>';
 		}
-		echo '</ul>';
+		$html .=  '</ul>';
 	}
-	echo '</li>';
+	$html .=  '</li>';
+	return $html;
 }
 
 /**
@@ -741,19 +746,19 @@ function pl_print_rounds_menu($view, $round, $competition_id, $master='') {
 	if ($competition['round_names']){
 		$round_names = pl_get_all_round_names($competition['round_names']);
 		}
-	echo '<li><a href="#">';
+	$html .=  '<li><a href="#">';
 		if ($round != 0){
 			if (isset($round_names)){
-				echo $round_names[$round-1];
+				$html .=  $round_names[$round-1];
 			}else {
-				echo $round.'. Spieltag';
+				$html .=  $round.'. Spieltag';
 			}
 		} else {
-			echo Master;
+			$html .=  Master;
 
 		}
-	echo '</a>';
-	echo '<ul>';
+	$html .=  '</a>';
+	$html .=  '<ul>';
 
 
 
@@ -761,7 +766,7 @@ function pl_print_rounds_menu($view, $round, $competition_id, $master='') {
 	if ($master){
 		$class = '';
 		if ($round == 0){$class = 'active';}
-		echo '<li class="roundmenu'.$class.'"><a href="?page_id='.$page_id.'&amp;view='.$view.'&amp;round=0&amp;competition_id='.$competition_id.'#menutip">'.Master.' </a></li>';
+		$html .=  '<li class="roundmenu'.$class.'"><a href="?page_id='.$page_id.'&amp;view='.$view.'&amp;round=0&amp;competition_id='.$competition_id.'#menutip">'.Master.' </a></li>';
 
 		}
 	for ($i = 1; $i <= $competition['rounds']; $i++){
@@ -769,12 +774,13 @@ function pl_print_rounds_menu($view, $round, $competition_id, $master='') {
 			if ($round == $i){$class = 'active';}
 				if (isset($round_names[$i-1])){$round_name = $round_names[$i-1];}
 				else {$round_name = $i.'. Spieltag';}
-				echo '<li class="roundmenu'.$class.'"><a href="?page_id='.$page_id.'&amp;view='.$view.'&amp;round='.$i.'&amp;competition_id='.$competition_id.'#menutip">'.$round_name.' </a></li>';
+				$html .=  '<li class="roundmenu'.$class.'"><a href="?page_id='.$page_id.'&amp;view='.$view.'&amp;round='.$i.'&amp;competition_id='.$competition_id.'#menutip">'.$round_name.' </a></li>';
 			}
-	echo '</ul>';
-	echo '</li>';
+	$html .=  '</ul>';
+	$html .= '</li>';
 	?>
 	<?php
+	return $html;
 }
 
 /**
@@ -2209,7 +2215,7 @@ Ich übernehme selbstverständlich keine Garantie für eventuelle Fehler, Macken
 
 /**
  *
- * importiert die Bundesliga 2015 von der Datenbank OpenDB
+ * importiert die Bundesliga 2016 von der Datenbank OpenDB
  */
 function import_opendb(){
 	global $wpdb, $ID, $options_new, $teams, $value, $games;

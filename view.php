@@ -16,7 +16,7 @@ global $user_ID;
  * - chosen view
  */
 
-$page_id 				= $pl_options['page_id']; 
+$page_id 				= $pl_options['page_id'];
 $number_of_competitions	= pl_get_number_of_competitions();
 if (isset($_REQUEST['action'])) $action = $_REQUEST['action'];
 else $action = false;
@@ -30,7 +30,7 @@ if (isset($_REQUEST['competition_id'])) {
 		$competition_id = false;
 	}
 if (isset($_REQUEST['round'])) {
-	$round = $_REQUEST['round']; 
+	$round = $_REQUEST['round'];
 	settype($round, "INT");
 	} else {
 		$round = false;
@@ -44,7 +44,7 @@ if (isset($_REQUEST['round'])) {
  * - no chosen competition --> the first active competition in the db
  * - no chosen round --> round = nextday
  * - no active competition --> view = Error/no competition
- */ 
+ */
 
 if (!$view and !$user_ID){$view="results";}
 if (!$view){$view = "tipgames";}
@@ -53,7 +53,7 @@ if (!$competition_id){$competition = pl_get_first_competition();}
 //if (!$round){$round = $competition['next_round'];}
 if (!$round AND $view =="tipgames"){$round = $competition['next_round'];}
 if (!$number_of_competitions OR $number_of_competitions == 0){$view = 'noactivecompetition';}
-if (!$user_ID AND $view == "tipgames"){$view = "register";}	
+if (!$user_ID AND $view == "tipgames"){$view = "register";}
 
 
 
@@ -65,7 +65,7 @@ if (!$user_ID AND $view == "tipgames"){$view = "register";}
  */
 if ($action == "sendtips"){
 	// Number of games
-	$numberofgames = trim($_POST['numberofgames']);  
+	$numberofgames = trim($_POST['numberofgames']);
 	for($i=1; $i<=$numberofgames; $i++){
 		// Reads the form
 		unset($team1tip);
@@ -89,29 +89,29 @@ if ($action == "sendtips"){
 
 // and now the page
 if ($view != 'noactivecompetition'){
-	pl_print_top_menu_tip($number_of_competitions, $view, $round, $competition['id']);
+	$html .= pl_print_top_menu_tip($number_of_competitions, $view, $round, $competition['id']);
 	}
 if ($view == "tipgames" AND $user_ID){
 	if ($action == "sendtips"){
-		echo '<h3>'.TipsSent.'</h3>';	
+		$html .=  '<h3>'.TipsSent.'</h3>';
 	}
-	pl_print_games($round, $competition, $pl_options); 
+	$html .= pl_print_games($round, $competition, $pl_options);
 	}
 if ($view == "results"){
-	pl_print_results($round, $competition, $pl_options);
+	$html .= pl_print_results($round, $competition, $pl_options);
 	}
 if ($view == "overview"){
-	pl_print_overview($round, $competition, $pl_options);
-	}	
+	$html .= pl_print_overview($round, $competition, $pl_options);
+	}
 if ($view == "noactivecompetition"){
-	echo '<h3>'.NoActiveCompetition.'</h3>';
-	}	
+	$html .=  '<h3>'.NoActiveCompetition.'</h3>';
+	}
 if ($view == "register"){
-	echo '<h3>'.LoginRequired.'</h3>';
+	$html .=  '<h3>'.LoginRequired.'</h3>';
 	}
 
-	
+
 if ($pl_options['showlink'] == "on") {
-	echo '<p><small><a href="http://liga.parkdrei.de/category/das-spiel-hier/predictionleague/">Prediction League Plugin '.PL_VERSION.' f&uuml;r Wordpress</a></small></p>';
-}	
+	$html .=  '<p><small><a href="http://liga.parkdrei.de/category/das-spiel-hier/predictionleague/">Prediction League Plugin '.PL_VERSION.' f&uuml;r Wordpress</a></small></p>';
+}
 ?>
